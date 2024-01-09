@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html
+ lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+  content="width=device-width, initial-scale=1.0">
+  <title>E-waste Rewards</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin-top: 8%;
+      padding: 0;
+      margin-bottom: 0;
+      margin-left: 0;
+      margin-right: 0;
+    }
+    
+    #navi{
+    background-color: white;
+    padding: 0%;
+    position: absolute;
+    top:0;
+    width: 100%;
+    left: 0;
+    display: flex;
+    font-size: 18px;
+    box-shadow: 15px 5px 15px  rgb(158, 157, 157);
+    }
+
+    #navi1{
+        display: flex;
+        margin-right: 16px ;
+        align-items: center;
+    }
+    #LgBtn1{
+    background-color: #003e29 ;
+    align-items: right;
+    color: white;
+    height: 40px;
+    width: 80px;
+    border-radius: 8px;
+    border-style: solid;
+    border-color:#003e29 ;
+    margin-left: 20px;
+    }
+    .reward-section {
+      background-color: #ffffff;
+      border: 2px solid #003e29;
+      border-radius: 15px;
+      margin: 20px;
+      padding: 20px;
+      box-shadow: 10px 5px 10px rgb(158, 157, 157);
+    }
+    .reward-section h2 {
+      color: #003e29;
+    }
+    .reward-section p {
+      font-size: 18px;
+    }
+    .reward-items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .reward-item {
+      background-color: #faf6ed;
+      border: solid #003e29;
+      padding: 10px;
+      margin: 10px;
+      border-radius: 10px;
+      text-align: center;
+      max-width: 200px;
+    }
+    .reward-item img {
+      width: 200px;
+      height: 200px;
+    }
+    .reward-item h3 {
+      color: #003e29;
+    }
+    .Buy-button {
+      background-color: #003e29;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 10px;
+      cursor: pointer;
+    }
+    .Buy-button:hover {
+      background-color: #001c14;
+    }
+    #footer {
+      background-color: #003e29;
+      color: white;
+      padding: 10px;
+    }
+        </style>
+      
+</head>
+<body>
+    
+  <nav id="navi">
+    <div style="width: fit-content; padding-top: 0;">
+      <h4 id="user_name" style="width: 100%; color: #003e29; margin-bottom: 5px; margin-left: 10px;"></h4>
+      <div style="border: solid#001c14; margin-left: 10px; width:fit-content; color: #016a47; background-color: #faf6ed; height: 20px; border-radius: 30px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+        <img src="reward-coin.jpg" style="border-radius: 50%; width: 18px;">
+      <span  id="points">
+      </span>
+    </div>
+    </div>
+    <div style="width:100%; text-align: center;"><h1 id="tab" style="text-align: center; color: #003e29; "><b>EcoGems</b></h1></div>
+    
+  <div id="navi1">
+
+    <button id="LgBtn1" onclick="location.href='afterLoginPage.html'"> Home </button>
+    <a href="page.html"><button id="LgBtn1" onclick="Clear()"> Logout </button></a> 
+  </div>
+</nav>
+
+    
+    <h2 style="color: #016a47;">Redeem your Rewards here</h2>
+
+    <div class="reward-section">
+        <div class="reward-items">
+            <div class="reward-item">
+                <img src="smartphone.webp" alt="Smartphone">
+                <h3>Smartphone</h3>
+                <p>Redeem 100 Points.</p>
+                <button class="Buy-button" onclick="Buy(100)">Buy</button>
+            </div>
+
+            <div class="reward-item">
+                <img src="laptop.jpg" alt="Laptop">
+                <h3>Laptop</h3>
+                <p>Redeem 150 Points.</p>
+                <button class="Buy-button" onclick="Buy(150)">Buy</button>
+            </div>
+
+            <div class="reward-item">
+                <img src="Tablet.jpg" alt="Tablet">
+                <h3>Tablet</h3>
+                <p>Redeem 80 Points.</p>
+                <button class="Buy-button" onclick="Buy(80)">Buy</button>
+            </div>
+
+            <div class="reward-item">
+                <img src="printer.jpg" alt="Printer">
+                <h3>Printer</h3>
+                <p>Reedem 50 Points.</p>
+                <button class="Buy-button" onclick="Buy(50)">Buy</button>
+            </div>
+    
+            <div class="reward-item">
+                <img src="Refrigerator.webp" alt="Refrigerator">
+                <h3>Refrigerator</h3>
+                <p>Reedem 500 Points.</p>
+                <button class="Buy-button" onclick="Buy(500)">Buy</button>
+            </div>
+    
+            <div class="reward-item">
+                <img src="Television.jpg" alt="Television">
+                <h3>Television</h3>
+                <p>Reedem 300 Points.</p>
+                <button class="Buy-button" onclick="Buy(300)">Buy</button>
+            </div>
+    
+            <div class="reward-item">
+                <img src="Washing Machine.webp" alt="Washing Machine">
+                <h3>Washing Machine</h3>
+                <p>Reedem 400 Points.</p>
+                <button class="Buy-button" onclick="Buy(400)">Buy</button>
+            </div>
+    
+            <div class="reward-item">
+                <img src="Air Condition.webp"alt="Air Condition">
+                <h3>Air Condition</h3>
+                <p>Reedem 350 Points.</p>
+                <button class="Buy-button" onclick="Buy(350)">Buy</button>
+            </div>
+    
+            <div class="reward-item">
+                <img src="Mixer.jpg"alt="Mixer">
+                <h3>Mixer</h3>
+                <p>Reedem 250 Points.</p>
+                <button class="Buy-button" onclick="Buy(250)">Buy</button>
+            </div>
+    
+            <div class="reward-item">
+                <img src="Digital Cameras.jpg"alt="Digital Cameras">
+                <h3>Digital Cameras</h3>
+                <p>Reedem 450 Points.</p>
+                <button class="Buy-button" onclick="Buy(450)">Buy</button>
+            </div>
+    
+    
+            <div class="reward-item">
+                <img src="Induction Stove.jpg"alt="Induction Stove">
+                <h3>Induction Stove</h3>
+                <p>Reedem 180 Points.</p>
+                <button class="Buy-button" onclick="Buy(180)">Buy</button>
+            </div>
+    
+    
+            <div class="reward-item">
+                <img src="Geyser.jpg"alt="Geyser">
+                <h3>Geyser</h3>
+                <p>Reedem 300 Points.</p>
+                <button class="Buy-button" onclick="Buy(300)">Buy</button>
+            </div>
+    
+            <div class="reward-item">
+                <img src="Inverter.jpg"alt="Inverter">
+                <h3>Inverter</h3>
+                <p>Reedem 600 Points.</p>
+                <button class="Buy-button" onclick="Buy(600)">Buy</button>
+            </div>
+    
+            <div class="reward-item">
+                <img src="fan.jpg"alt="Fan">
+                <h3>Fan</h3>
+                <p>Reedem 80 Points.</p>
+                <button class="Buy-button" onclick="Buy(80)">Buy</button>
+            </div>
+    
+            <div class="reward-item">
+                <img src="Bulb.jpg"alt="Bulbs">
+                <h3>Bulbs</h3>
+                <p>Reedem 30 Points.</p>
+                <button class="Buy-button" onclick="Buy(30)">Buy</button>
+            </div>
+    
+    
+            <div class="reward-item">
+                <img src="CPU.jpg"alt="CPU">
+                <h3>CPU</h3>
+                <p>Reedem 230 Points.</p>
+                <button class="Buy-button" onclick="Buy(230)">Buy</button>
+            </div>
+    
+            <div class="reward-item">
+                <img src="Keyboard and Mouse.jpg"alt="Keyboard & Mouse">
+                <h3>Keyboard & Mouse</h3>
+                <p>Reedem 90 Points.</p>
+                <button class="Buy-button" onclick="Buy(90)">Buy</button>
+            </div>
+    
+            <div class="reward-item">
+                <img src="Iron.jpg"alt="Iron">
+                <h3>Iron</h3>
+                <p>Reedem 50 Points.</p>
+                <button class="Buy-button" onclick="Buy(50)">Buy</button>
+            </div>
+    
+            <div class="reward-item">
+                <img src="Home theater.webp"alt="Home Theatre">
+                <h3>Home Theatre</h3>
+                <p>Reedem 200 Points.</p>
+                <button class="Buy-button" onclick="Buy(200)">Buy</button>
+            </div>
+    
+            <div class="reward-item">
+                <img src="RO water purifier.jpg"alt="RO Water Purifier">
+                <h3>RO Water Purifier</h3>
+                <p>Reedem 300 Points.</p>
+                <button class="Buy-button" onclick="Buy(300)">Buy</button>
+            </div>
+        
+        </div>
+    </div>
+
+    <div id="footer">
+        <p>&copy; EcoGems | All rights reserved 2023.</p>
+    </div>
+</body>
+
+<script>
+  var user_data = window.localStorage.getItem('_User')
+  var obj = JSON.parse(user_data);
+  console.log(obj);
+  document.getElementById('user_name').innerHTML=`Welcome ${obj.name}`;
+  document.getElementById('points').innerHTML=`Points : ${obj.Reward}`;
+  
+  function Clear(){
+      window.localStorage.removeItem('_User');
+  }
+   
+  function Buy( amt){
+    if(obj.Reward >= amt){
+      window.location.replace("cart.html");
+    }
+    else{
+      alert("Not enough points");
+    }
+  }
+  </script>
+
+</html>
